@@ -3,7 +3,7 @@
 #   Author: JK
 #=================================================
 
-name: Build G-DOCK
+name: Build Hiwifi--C526A
 
 on: 
   release:
@@ -54,11 +54,8 @@ jobs:
            
     - name: Clone openwrt-packages code
       run: |
-  ##      cd lede/package &&  git clone https://github.com/wwz09/wwz09-packages.git
+        cd lede/package &&  git clone https://github.com/wwz09/wwz09-packages.git
     
-        
- ##****************************************************************************  
-
     - name: Update feeds
       run: cd lede && ./scripts/feeds update -a
 
@@ -75,8 +72,7 @@ jobs:
 
     - name: Download package
       run: |
-        echo -e "$(nproc) thread build."
-        cd lede && make download -j$(nproc)
+        cd openwrt && make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
