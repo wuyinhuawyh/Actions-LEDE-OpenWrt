@@ -50,7 +50,7 @@ jobs:
 
     - name: Clone source code
       run: |
-        git clone https://github.com/immortalwrt/immortalwrt.git lede lede
+        git clone https://github.com/immortalwrt/immortalwrt.git lede
            
     - name: Clone openwrt-packages code
       run: |
@@ -67,7 +67,7 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        cp -f c562a.config ./lede/.config
+        cp -f c526a.config ./lede/.config
          chmod +x diy.sh
         cd lede
         ../diy.sh
