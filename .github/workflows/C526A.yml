@@ -72,7 +72,8 @@ jobs:
 
     - name: Download package
       run: |
-        cd openwrt && make download -j8
+        echo -e "$(nproc) thread build."
+        cd lede && make download -j$(nproc)
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
@@ -82,7 +83,7 @@ jobs:
         echo -e "$(nproc) thread build."
         make -j$(nproc) V=s
 
-    - name : Upload artifact
+    - name: Upload artifact
       uses: actions/upload-artifact@master
       with:
         name: G-DOCK
