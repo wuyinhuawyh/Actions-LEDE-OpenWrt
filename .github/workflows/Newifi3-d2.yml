@@ -24,10 +24,10 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/openwrt
   REPO_BRANCH: lede-17.01
-  FEEDS_CONF: config/Newifi3-d2/feeds.conf.default
-  CONFIG_FILE: config/Newifi3-d2/Newifi3-d2.config
-  DIY_P1_SH: config/Newifi3-d2/diy-part1.sh
-  DIY_P2_SH: config/Newifi3-d2/diy-part2.sh
+  FEEDS_CONF: config/Newifi3/feeds.conf.default
+  CONFIG_FILE: config/Newifi3/Newifi3-d2.config
+  DIY_P1_SH: config/Newifi3/diy-part1.sh
+  DIY_P2_SH: config/Newifi3/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
