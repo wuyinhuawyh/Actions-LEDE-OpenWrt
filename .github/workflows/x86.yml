@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: HIWIFI-C625A
+name: X86_64
 
 on:
   repository_dispatch:
@@ -24,14 +24,14 @@ on:
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-18.06-k5.4
-  FEEDS_CONF: config/c526a/feeds.conf.default
-  CONFIG_FILE: config/c526a/c526a.config
-  DIY_P1_SH: config/c526a/diy-part1.sh
-  DIY_P2_SH: config/c526a/diy-part2.sh
+  FEEDS_CONF: config/x86/feeds.conf.default
+  CONFIG_FILE: config/x86/x86.config
+  DIY_P1_SH: config/x86/diy-part1.sh
+  DIY_P2_SH: config/x86/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
+  UPLOAD_COWTRANSFER: true
+  UPLOAD_WETRANSFER: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
@@ -160,7 +160,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M"-ASUS-ACRH17)"
+        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M"-X86_64)"
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
