@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: GDOCK-测试
+name: GDock-测试
 
 on:
   repository_dispatch:
@@ -22,8 +22,8 @@ on:
 #    - cron: 0 0 * * 5
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
-  REPO_BRANCH: lede-17.01
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_BRANCH: openwrt-18.06-k5.4
   FEEDS_CONF: config/GDock/feeds.conf.default
   CONFIG_FILE: config/GDock/GDock.config
   DIY_P1_SH: config/GDock/diy-part1.sh
@@ -160,7 +160,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M"-GDock-CSR619AC)"
+        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M"-GDock-R619AC)"
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
