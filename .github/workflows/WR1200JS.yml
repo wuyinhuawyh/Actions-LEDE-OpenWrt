@@ -22,8 +22,8 @@ on:
 #    - cron: 0 0 * * 5
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
-  REPO_BRANCH: lede-17.01
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_BRANCH: openwrt-18.06-k5.4
   FEEDS_CONF: config/WR1200JS/feeds.conf.default
   CONFIG_FILE: config/WR1200JS/Newifi3-d2.config
   DIY_P1_SH: config/WR1200JS/diy-part1.sh
