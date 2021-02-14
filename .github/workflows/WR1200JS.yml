@@ -22,8 +22,8 @@ on:
 #    - cron: 0 0 * * 5
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-18.06
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   FEEDS_CONF: config/WR1200JS/feeds.conf.default
   CONFIG_FILE: config/WR1200JS/WR1200JS.config
   DIY_P1_SH: config/WR1200JS/diy-part1.sh
@@ -96,7 +96,7 @@ jobs:
       run: |
         cd openwrt
         make defconfig
-        make download -j8
+        make download -j4
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
