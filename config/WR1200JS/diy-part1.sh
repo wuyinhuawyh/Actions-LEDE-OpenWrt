@@ -10,11 +10,11 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#取消掉feeds.conf.default文件里面的helloworld的#注释
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default  #使用源码自带ShadowSocksR Plus+出国软件
 
 #Clone OpenAppFilter source code
 #git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 
-# Add a feed source
+# Add a feed source增加默认源地址
 sed -i '$a src-git wwz09 https://github.com/wwz09/wwz09-packages.git' feeds.conf.default

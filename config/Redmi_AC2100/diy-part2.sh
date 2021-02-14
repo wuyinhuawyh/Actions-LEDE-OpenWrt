@@ -13,7 +13,9 @@
 # 删除默认argon主题，并下载新argon主题
 rm -rf ./package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git ./package/lean/luci-theme-argon/
-# Modify default IP
+#添加自定义插件链接（自己想要什么就github里面搜索然后添加）主题-edge-动态登陆界面
+git clone -b 18.06 https://github.com/garypang13/luci-theme-edge package/luci-theme-edge  
+# 修改openwrt登陆地址,把下面的192.168.123.1修改成你想要的就可以了，其他的不要动
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 # Modify default host name
 sed -i 's/OpenWrt/Kyara/g' package/base-files/files/bin/config_generate
