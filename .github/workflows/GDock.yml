@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-18.06-k5.4
+  REPO_BRANCH: openwrt-18.06
   FEEDS_CONF: config/GDock/feeds.conf.default
   CONFIG_FILE: config/GDock/GDock.config
   DIY_P1_SH: config/GDock/diy-part1.sh

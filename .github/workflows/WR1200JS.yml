@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-18.06-k5.4
+  REPO_BRANCH: openwrt-18.06
   FEEDS_CONF: config/WR1200JS/feeds.conf.default
   CONFIG_FILE: config/WR1200JS/WR1200JS.config
   DIY_P1_SH: config/WR1200JS/diy-part1.sh

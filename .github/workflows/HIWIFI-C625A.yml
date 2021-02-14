@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-18.06-k5.4
+  REPO_BRANCH: openwrt-18.06
   FEEDS_CONF: config/c526a/feeds.conf.default
   CONFIG_FILE: config/c526a/c526a.config
   DIY_P1_SH: config/c526a/diy-part1.sh
