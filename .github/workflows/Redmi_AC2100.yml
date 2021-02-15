@@ -1,39 +1,25 @@
 #
+# Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
 #
-# 感谢p3terx大神的一键编译脚本
-# 
-# Copyright (C) 2019 P3TERX <https://p3terx.com>
-# <https://github.com/P3TERX/Actions-OpenWrt.git>
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
 #
-#修改以下代码或者开启触发开关都好，要严格按格式对好,前面有多少空格也要看清楚
+# https://github.com/P3TERX/Actions-OpenWrt
+# Description: Build OpenWrt using GitHub Actions
 #
 
 name: Redmi_AC2100 固件
 
 on:
   repository_dispatch:
-
-#编辑任意指定文件触发开始编译(去掉下面5个#开启,最下面一行是指定修改什么文件就触发编译,我现在是修改diy.config文件触发)
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - 'Redmi_AC2100.config'
-
-
-#release发布触发开始编译(只是一个触发条件,不会发布的,又麻烦,没卵用,不用研究)
-#  release:
-#    types: published
-
-
-#定时触发开始编译(utc時間)
-  schedule:
-    - cron: 0 8 */9 * *
-
-
-#点☆Star触发开始编译
-  watch:
-    types: started
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+#  schedule:
+#    - cron: 0 8 * * 5
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
