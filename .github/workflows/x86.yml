@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: GDock-R619AC 固件
+name: X86-J1900 固件
 
 on:
   repository_dispatch:
