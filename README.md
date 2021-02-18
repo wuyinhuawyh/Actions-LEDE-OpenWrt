@@ -14,4 +14,4 @@ x86_64、Redmi_AC2100、竞斗云、Newifi3-d2、WR1200JS、 HIWIFI-C625A
 Lean源码：[coolsnowwolf/lede](https://github.com/coolsnowwolf/openwrt)    
 CTCGFW源码：[immortalwrt/immortalwrt](https://github.com/immortalwrt/immortalwrt)
 
-#注：所有固件均未进行测试，刷机后变砖本与本为无关〈〉〈〉〈〉〈〉
+#注：所有固件均未进行测试，刷机后变砖与本为无关〈〉〈〉〈〉〈〉
