@@ -3,7 +3,8 @@
 [固件下载](https://github.com/wwz09/Actions-LEDE-OpenWrt/releases)
 ####
 [插件库](https://github.com/wwz09/wwz09-packages)
-#####
+##
+[学习资料]（https://github.com/wwz09/build-openwrt/blob/main/README.md）
 ### 简介
 编译一些设备的OpenWrt固件，**仅满足自己学习**
 
@@ -14,11 +15,17 @@
 
 ### 设备
 x86_64、Redmi_AC2100、竞斗云、Newifi3-d2、WR1200JS、 极XC625A、星际宝盒CM520
+#
+#
+
 
 ### 鸣谢
-脚本提供：[P3TERX/Actions-Openwrt](https://github.com/P3TERX/Actions-OpenWrt)    
-Lean源码：[coolsnowwolf/lede](https://github.com/coolsnowwolf/openwrt)    
-CTCGFW源码：[immortalwrt/immortalwrt](https://github.com/immortalwrt/immortalwrt)
+- 感谢[coolsnowwolf](https://github.com/coolsnowwolf/lede.git)大神提供的源码
+- 感谢[Lienol](https://github.com/Lienol/openwrt.git)大神提供的源码
+- 感谢[ctcgfw](https://github.com/project-openwrt/openwrt.git)大神提供的源码
+- 感谢[P3TERX](https://github.com/P3TERX/Actions-OpenWrt)大神提供的一键编译脚本
+- 感谢微软免费提供的编译平台
+- 感谢各位大佬提供的各种各样的插件
 #
 #
 ## 快捷链接
