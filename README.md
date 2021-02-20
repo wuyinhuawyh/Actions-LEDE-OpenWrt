@@ -2,7 +2,7 @@
 ####
 [固件下载](https://github.com/wwz09/Actions-LEDE-OpenWrt/releases)
 ####
-[软件库]（https://github.com/wwz09/wwz09-packages）
+[插件库](https://github.com/wwz09/wwz09-packages)
 #####
 ### 简介
 编译一些设备的OpenWrt固件，**仅满足自己学习**
