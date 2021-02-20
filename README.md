@@ -21,8 +21,6 @@ Lean源码：[coolsnowwolf/lede](https://github.com/coolsnowwolf/openwrt)
 CTCGFW源码：[immortalwrt/immortalwrt](https://github.com/immortalwrt/immortalwrt)
 #
 #
-#
-#
 ## 快捷链接
 
 - [coolsnowwolf/lede源码](https://github.com/coolsnowwolf/lede.git)
