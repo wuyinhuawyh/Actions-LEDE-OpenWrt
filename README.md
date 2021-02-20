@@ -24,6 +24,7 @@ x86_64、Redmi_AC2100、竞斗云、Newifi3-d2、WR1200JS、 极XC625A、星际�
 - 感谢[Lienol](https://github.com/Lienol/openwrt.git)大神提供的源码
 - 感谢[ctcgfw](https://github.com/project-openwrt/openwrt.git)大神提供的源码
 - 感谢[P3TERX](https://github.com/P3TERX/Actions-OpenWrt)大神提供的一键编译脚本
+- 感谢[19882530](https://github.com/19882530/build-openwrt)大神提供学习资料
 - 感谢微软免费提供的编译平台
 - 感谢各位大佬提供的各种各样的插件
 #
