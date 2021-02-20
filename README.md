@@ -10,7 +10,7 @@
 默认用户名root，密码 ###  空
 
 ### 设备
-x86_64、Redmi_AC2100、竞斗云、Newifi3-d2、WR1200JS、 HIWIFI-C625A、星际宝盒CM520
+x86_64、Redmi_AC2100、竞斗云、Newifi3-d2、WR1200JS、 极XC625A、星际宝盒CM520
 
 ### 鸣谢
 脚本提供：[P3TERX/Actions-Openwrt](https://github.com/P3TERX/Actions-OpenWrt)    
