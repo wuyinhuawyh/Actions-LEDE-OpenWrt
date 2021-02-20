@@ -4,7 +4,7 @@
 ####
 [插件库](https://github.com/wwz09/wwz09-packages)
 ##
-[学习资料]（https://github.com/wwz09/build-openwrt/blob/main/README.md）
+[学习资料](https://github.com/wwz09/build-openwrt/blob/main/README.md)
 ### 简介
 编译一些设备的OpenWrt固件，**仅满足自己学习**
 
